@@ -1,0 +1,162 @@
+{
+  "introduccion": {
+    "titulo": "Aprendamos Juntos",
+    "subtitulo": "Conocimiento que transforma. Ideas que liberan.",
+    "descripcion": "Compartimos lecturas y recursos de pensadores que influyeron en nuestra visión de la libertad individual, la economía de mercado y el rol limitado del Estado. Escuchá, descargá y aprendé a tu ritmo."
+  },
+  "autores": [
+    {
+      "id": "adam-smith",
+      "nombre": "Adam Smith",
+      "iniciales": "AS",
+      "imagen": "/images/autores/adam-smith.jpg",
+      "descripcion": "Adam Smith vincula la economía con la ética mediante la división del trabajo y la simpatía. Define la riqueza por el trabajo y el capital, mientras que en lo moral destaca al espectador imparcial y la justicia. El interés propio impulsa el mercado bajo un marco de virtud.",
+      "libros": [
+        {
+          "id": "la-riqueza-de-las-naciones",
+          "titulo": "La Riqueza de las Naciones",
+          "audio": "/audios/adam-smith-la-riqueza-de-las-naciones.mp3",
+          "pdf": "/pdfs/Adam Smith - La Riqueza de las Naciones.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ayn-rand",
+      "nombre": "Ayn Rand",
+      "iniciales": "AR",
+      "imagen": "/images/autores/ayn-rand.jpg",
+      "descripcion": "Ayn Rand defiende el egoísmo racional y la razón como pilares de la supervivencia humana. Rechaza el altruismo y el colectivismo, calificándolos de inmorales y destructivos. Propone un capitalismo de libre mercado y un gobierno limitado que proteja los derechos individuales.",
+      "libros": [
+        {
+          "id": "la-rebelion-de-atlas",
+          "titulo": "La Rebelión de Atlas",
+          "audio": "/audios/ayn-rand-la-rebelion-de-atlas.mp3",
+          "pdf": "/pdfs/Ayn Rand - La Rebelión de Atlas.pdf"
+        }
+      ]
+    },
+    {
+      "id": "carl-menger",
+      "nombre": "Carl Menger",
+      "iniciales": "CM",
+      "imagen": "/images/autores/carl-menger.jpg",
+      "descripcion": "Carl Menger fundó la Escuela Austriaca mediante el individualismo metodológico. Propuso una teoría del valor subjetivo donde la utilidad depende de las necesidades. Explica el origen del dinero como una evolución espontánea de mercancías líquidas, rechazando la intervención estatal.",
+      "libros": [
+        {
+          "id": "principios-de-economia-politica",
+          "titulo": "Principios de Economía Política",
+          "audio": "/audios/carl-menger-principios-de-economia-politica.mp3",
+          "pdf": "/pdfs/Carl Menger - Principios de Economia Politica.pdf"
+        }
+      ]
+    },
+    {
+      "id": "friedrich-hayek",
+      "nombre": "Friedrich Hayek",
+      "iniciales": "FH",
+      "imagen": "/images/autores/friedrich-hayek.jpg",
+      "descripcion": "Hayek sostiene que el socialismo y la planificación central destruyen la libertad individual. Propone la competencia de monedas para evitar la inflación y critica el intervencionismo. La evolución social surge de un orden espontáneo que la razón no puede diseñar.",
+      "libros": [
+        {
+          "id": "camino-de-servidumbre",
+          "titulo": "Camino de Servidumbre",
+          "audio": "/audios/friedrich-hayek-camino-de-servidumbre.mp3",
+          "pdf": "/pdfs/Friedrich Hayek - Camino de Servidumbre.pdf"
+        },
+        {
+          "id": "los-fundamentos-de-la-libertad",
+          "titulo": "Los Fundamentos de la Libertad",
+          "audio": "/audios/friedrich-hayek-los-fundamentos-de-la-libertad.mp3",
+          "pdf": "/pdfs/Friedrich Hayek - Los Fundamentos de la Libertad.pdf"
+        }
+      ]
+    },
+    {
+      "id": "henry-hazlitt",
+      "nombre": "Henry Hazlitt",
+      "iniciales": "HH",
+      "imagen": "/images/autores/henry-hazlitt.jpg",
+      "descripcion": "Hazlitt analiza la cooperación social y el mercado libre como motores de bienestar. Critica el socialismo por su incapacidad de cálculo económico y defiende que la moral, basada en el utilitarismo de reglas, y la virtud estoica son esenciales para una sociedad libre y feliz.",
+      "libros": [
+        {
+          "id": "lo-que-debemos-saber-sobre-inflacion",
+          "titulo": "Lo que debemos saber sobre inflación",
+          "audio": "/audios/henry-hazlitt-lo-que-debemos-saber-sobre-inflacion.mp3",
+          "pdf": "/pdfs/Henry Hazlitt - Lo que debemos saber sobre inflacion.pdf"
+        }
+      ]
+    },
+    {
+      "id": "juan-bautista-alberdi",
+      "nombre": "Juan Bautista Alberdi",
+      "iniciales": "JA",
+      "imagen": "/images/autores/juan-bautista-alberdi.jpg",
+      "descripcion": "Alberdi propone un liberalismo romántico para Argentina basado en el lema \"gobernar es poblar\". Impulsa la inmigración europea, la industria y un Estado federativo con un Ejecutivo fuerte. Critica la barbarie política y busca civilizar mediante el comercio y el progreso.",
+      "libros": [
+        {
+          "id": "las-bases",
+          "titulo": "Las Bases",
+          "audio": "/audios/juan-bautista-alberdi-bases.mp3",
+          "pdf": "/pdfs/Juan Bautista Alberdi - Bases.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ludwig-von-mises",
+      "nombre": "Ludwig von Mises",
+      "iniciales": "LM",
+      "imagen": "/images/autores/ludwig-von-mises.jpg",
+      "descripcion": "Ludwig von Mises defiende la propiedad privada y el libre mercado como bases de la civilización. Demuestra que el intervencionismo y el socialismo fracasan por la imposibilidad del cálculo económico y generan burocracia, inflación y pérdida de libertad individual.",
+      "libros": [
+        {
+          "id": "la-mentalidad-anticapitalista",
+          "titulo": "La Mentalidad Anticapitalista",
+          "audio": "/audios/ludwig-von-mises-la-mentalidad-anticapitalista.mp3",
+          "pdf": "/pdfs/Ludwig Von Mises - La Mentalidad Anticapitalista.pdf"
+        },
+        {
+          "id": "critica-del-intervencionismo",
+          "titulo": "Crítica del Intervencionismo. El Mito de la Tercera Vía",
+          "audio": "/audios/ludwig-von-mises-critica-del-intervencionismo-el-mito-de-la-tercera-via.mp3",
+          "pdf": "/pdfs/Ludwig Von Mises - Critica del Intervencionismo. El Mito de la Tercera Via.pdf"
+        }
+      ]
+    },
+    {
+      "id": "milton-friedman",
+      "nombre": "Milton Friedman",
+      "iniciales": "MF",
+      "imagen": "/images/autores/milton-friedman.jpg",
+      "descripcion": "Los textos de Milton Friedman defienden el capitalismo y el libre mercado como garantes de la libertad individual. Critican la intervención estatal, el control monetario ineficiente y el proteccionismo, proponiendo la cooperación voluntaria para lograr prosperidad y justicia social.",
+      "libros": [
+        {
+          "id": "capitalismo-y-libertad",
+          "titulo": "Capitalismo y Libertad",
+          "audio": "/audios/milton-friedman-capitalismo-y-libertad.mp3",
+          "pdf": "/pdfs/Milton Friedman - Capitalismo y Libertad.pdf"
+        },
+        {
+          "id": "libertad-de-elegir",
+          "titulo": "Libertad de Elegir",
+          "audio": "/audios/milton-friedman-libertad-de-elegir.mp3",
+          "pdf": "/pdfs/Milton Friedman - Libertad de Elegir.pdf"
+        }
+      ]
+    },
+    {
+      "id": "murray-rothbard",
+      "nombre": "Murray Rothbard",
+      "iniciales": "MR",
+      "imagen": "/images/autores/murray-rothbard.jpg",
+      "descripcion": "Rothbard traza la historia del pensamiento económico y la libertad. Defiende la propiedad privada, el patrón oro y la ley natural frente al estatismo. Critica la educación obligatoria, la inflación por banca central y la intervención estatal en el mercado.",
+      "libros": [
+        {
+          "id": "el-hombre-la-economia-y-el-estado",
+          "titulo": "El Hombre, la Economía y el Estado",
+          "audio": "/audios/murray-rothbard-el-hombre-la-economia-y-el-estado.mp3",
+          "pdf": "/pdfs/Murray Rothbard - El Hombre, la Economia y el Estado.pdf"
+        }
+      ]
+    }
+  ]
+}

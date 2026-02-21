@@ -1,0 +1,20 @@
+@LibertariosTraslasierra_ContactApi_HostAddress = http://localhost:5264
+
+### Health Check
+GET {{LibertariosTraslasierra_ContactApi_HostAddress}}/api/health
+Accept: application/json
+
+###
+
+### Enviar mensaje de contacto
+POST {{LibertariosTraslasierra_ContactApi_HostAddress}}/api/contact
+Content-Type: application/json
+
+{
+  "name": "Test Usuario",
+  "contact": "test@example.com",
+  "localidad": "Mina Clavero",
+  "message": "Este es un mensaje de prueba"
+}
+
+###
