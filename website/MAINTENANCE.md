@@ -144,4 +144,4 @@ Puedes cambiarlos directamente en el SVG o usar las variables CSS del sitio.
 ---
 
 **Creado:** Febrero 2026  
-**Libertarios Traslasierra**
+**Liberal Libertario**

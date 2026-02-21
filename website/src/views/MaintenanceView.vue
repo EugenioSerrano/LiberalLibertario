@@ -10,45 +10,41 @@
         <div class="logo-section">
           <img 
             src="@/assets/LogoCondorOriginal.png" 
-            alt="Libertarios Traslasierra" 
+            alt="Liberal Libertario" 
             class="logo"
           />
-          <h1 class="logo-text">Libertarios Traslasierra</h1>
+          <h1 class="logo-text">Liberal Libertario</h1>
         </div>
 
         <!-- Imagen de ilustración -->
         <div class="illustration-section">
           <img 
-            src="https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?w=1200&h=600&fit=crop&q=80" 
-            alt="Fin de un camino" 
+            src="https://images.unsplash.com/photo-1497215842964-222b430dc094?w=1200&h=600&fit=crop&q=80" 
+            alt="Trabajo en progreso" 
             class="illustration"
           />
         </div>
 
         <!-- Mensaje principal -->
         <div class="message-section">
-          <h2 class="headline">Libertarios Traslasierra ha dejado de existir.</h2>
+          <h2 class="headline">Estamos trabajando en algo nuevo</h2>
           
           <div class="comunicado">
             <p class="statement">
-              Se acordó trabajar por mayoría, con reglas claras y diálogo.<br>
-              No se cumplió.
+              Liberal Libertario está dando sus primeros pasos.<br>
+              Estamos construyendo un espacio coherente y ético para las ideas de libertad.
             </p>
             
             <p class="statement">
-              Unos pocos decidieron imponer su voluntad y dinamitar lo que se había construido.
-            </p>
-            
-            <p class="statement">
-              Lamentamos el papelón público y pedimos disculpas a quienes confiaron en este espacio.
+              Próximamente tendremos novedades sobre quiénes somos, qué hacemos y cómo sumarse.
             </p>
             
             <p class="statement final">
-              Queda demostrado que sin respeto por los acuerdos y con egos descontrolados, ninguna idea, por buena que sea, puede prosperar.
+              Mientras tanto, estamos trabajando en los detalles para ofrecerte la mejor experiencia.
             </p>
             
             <p class="closure">
-              Fin del comunicado.
+              Volvemos pronto.
             </p>
           </div>
         </div>
@@ -60,7 +56,7 @@
 <style scoped>
 .maintenance-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #2C2C2C 0%, #1a1a1a 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,14 +85,12 @@
   gap: 1rem;
   margin-bottom: 2.5rem;
   padding-bottom: 2rem;
-  border-bottom: 3px solid #1a1a1a;
-  opacity: 0.6;
+  border-bottom: 3px solid var(--color-primary);
 }
 
 .logo {
   height: 80px;
   width: auto;
-  filter: grayscale(100%);
 }
 
 .logo-text {
@@ -138,7 +132,7 @@
 
 .statement.final {
   font-weight: 600;
-  border-left-color: #1a1a1a;
+  border-left-color: var(--color-primary);
   background: #f0f0f0;
 }
 
@@ -167,7 +161,6 @@
   height: auto;
   max-height: 300px;
   object-fit: cover;
-  filter: grayscale(50%) brightness(0.8);
   border-radius: 0.5rem;
 }
 

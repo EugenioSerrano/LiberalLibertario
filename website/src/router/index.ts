@@ -12,61 +12,61 @@ const router = createRouter({
       path: '/mantenimiento',
       name: 'maintenance',
       component: MaintenanceView,
-      meta: { title: 'Sitio en Mantenimiento - Libertarios Traslasierra' }
+      meta: { title: 'Sitio en Mantenimiento - Liberal Libertario' }
     },
     {
       path: '/',
       name: 'home',
       component: HomeView,
-      meta: { title: 'Libertarios Traslasierra' }
+      meta: { title: 'Liberal Libertario' }
     },
     {
       path: '/quienes-somos',
       name: 'quienes-somos',
       component: () => import('../views/QuienesSomosView.vue'),
-      meta: { title: 'Quiénes Somos - Libertarios Traslasierra' }
+      meta: { title: 'Quiénes Somos - Liberal Libertario' }
     },
     {
       path: '/origen',
       name: 'origen',
       component: () => import('../views/OrigenView.vue'),
-      meta: { title: 'De Dónde Venimos - Libertarios Traslasierra' }
+      meta: { title: 'De Dónde Venimos - Liberal Libertario' }
     },
     {
       path: '/principios',
       name: 'principios',
       component: () => import('../views/PrincipiosView.vue'),
-      meta: { title: 'Principios - Libertarios Traslasierra' }
+      meta: { title: 'Principios - Liberal Libertario' }
     },
     {
       path: '/que-hacemos',
       name: 'que-hacemos',
       component: () => import('../views/QueHacemosView.vue'),
-      meta: { title: 'Qué Hacemos - Libertarios Traslasierra' }
+      meta: { title: 'Qué Hacemos - Liberal Libertario' }
     },
     {
       path: '/como-trabajamos',
       name: 'como-trabajamos',
       component: () => import('../views/ComoTrabajamosView.vue'),
-      meta: { title: 'Cómo Trabajamos - Libertarios Traslasierra' }
+      meta: { title: 'Cómo Trabajamos - Liberal Libertario' }
     },
     {
       path: '/sumate',
       name: 'sumate',
       component: () => import('../views/SumateView.vue'),
-      meta: { title: 'Sumate - Libertarios Traslasierra' }
+      meta: { title: 'Sumate - Liberal Libertario' }
     },
     {
       path: '/aprendamos-juntos',
       name: 'aprendamos-juntos',
       component: () => import('../views/AprendamosJuntosView.vue'),
-      meta: { title: 'Aprendamos Juntos - Libertarios Traslasierra' }
+      meta: { title: 'Aprendamos Juntos - Liberal Libertario' }
     },
     {
       path: '/contacto',
       name: 'contacto',
       component: () => import('../views/ContactoView.vue'),
-      meta: { title: 'Contacto - Libertarios Traslasierra' }
+      meta: { title: 'Contacto - Liberal Libertario' }
     }
   ],
   scrollBehavior(_to, _from, savedPosition) {
@@ -91,7 +91,7 @@ router.beforeEach((to, _from, next) => {
     return
   }
   
-  document.title = (to.meta.title as string) || 'Libertarios Traslasierra'
+  document.title = (to.meta.title as string) || 'Liberal Libertario'
   next()
 })
 

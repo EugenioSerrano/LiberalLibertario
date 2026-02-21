@@ -17,7 +17,7 @@ import ContactForm from '@/components/ContactForm.vue'
             <div class="logo-container">
               <img 
                 src="@/assets/LogoCondorOriginal.png" 
-                alt="Logo Libertarios Traslasierra"
+                alt="Logo Liberal Libertario"
                 class="contact-logo"
               />
             </div>
@@ -35,7 +35,7 @@ import ContactForm from '@/components/ContactForm.vue'
               <span class="info-icon">🌐</span>
               <div class="info-content">
                 <h3>Sitio web</h3>
-                <p>libertarios-traslasierra.org</p>
+                <p>liberal-libertario.com</p>
               </div>
             </div>
 

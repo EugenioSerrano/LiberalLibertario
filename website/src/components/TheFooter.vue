@@ -20,7 +20,7 @@ const quickLinks = [
           <RouterLink to="/" class="footer-logo-link">
             <img 
               src="@/assets/LogoCondorBlanco.png" 
-              alt="Libertarios Traslasierra" 
+              alt="Liberal Libertario" 
               class="footer-logo"
             />
           </RouterLink>
@@ -56,7 +56,7 @@ const quickLinks = [
 
       <div class="footer-bottom">
         <p class="copyright">
-          © {{ currentYear }} Libertarios Traslasierra. Todos los derechos reservados.
+          © {{ currentYear }} Liberal Libertario. Todos los derechos reservados.
         </p>
         <p class="footer-quote">
           "Nuestra lealtad es a los principios, no a personas."

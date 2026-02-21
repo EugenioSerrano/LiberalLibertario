@@ -31,10 +31,10 @@ const closeMenu = () => {
       <RouterLink to="/" class="logo-link" @click="closeMenu">
         <img 
           src="@/assets/LogoCondorOriginal.png" 
-          alt="Libertarios Traslasierra" 
+          alt="Liberal Libertario" 
           class="logo"
         />
-        <span class="logo-text">Libertarios Traslasierra</span>
+        <span class="logo-text">Liberal Libertario</span>
       </RouterLink>
 
       <button 

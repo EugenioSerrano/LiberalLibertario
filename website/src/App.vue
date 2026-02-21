@@ -20,7 +20,7 @@ const isMaintenanceMode = computed(() => route.name === 'maintenance')
 
 <style>
 :root {
-  /* Paleta de colores - Libertarios Traslasierra */
+  /* Paleta de colores - Liberal Libertario */
   --color-primary: #F2B400;
   --color-primary-dark: #D9A200;
   --color-primary-light: #FFD54F;
