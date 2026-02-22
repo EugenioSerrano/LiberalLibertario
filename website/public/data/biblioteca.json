@@ -13,6 +13,12 @@
       "descripcion": "Adam Smith vincula la economía con la ética mediante la división del trabajo y la simpatía. Define la riqueza por el trabajo y el capital, mientras que en lo moral destaca al espectador imparcial y la justicia. El interés propio impulsa el mercado bajo un marco de virtud.",
       "libros": [
         {
+          "id": "la-mano-invisible",
+          "titulo": "La Mano Invisible",
+          "audio": "/audios/adam-smith-la-mano-invisible.mp3",
+          "pdf": "/pdfs/Adam Smith - La Mano Invisible.pdf"
+        },
+        {
           "id": "la-riqueza-de-las-naciones",
           "titulo": "La Riqueza de las Naciones",
           "audio": "/audios/adam-smith-la-riqueza-de-las-naciones.mp3",
