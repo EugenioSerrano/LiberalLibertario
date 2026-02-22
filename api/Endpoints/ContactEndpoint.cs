@@ -14,10 +14,33 @@ public static class ContactEndpoint
     private static async Task<IResult> SendContactAsync(
         ContactRequest request,
         IConfiguration configuration,
-        ILogger<Program> logger)
+        ILogger<Program> logger,
+        HttpContext httpContext)
     {
         try
         {
+            // Validar API Key
+            var apiKey = configuration["ApiKey"];
+            if (string.IsNullOrEmpty(apiKey))
+            {
+                logger.LogError("API Key not configured in appsettings");
+                return Results.Problem("Error de configuración del servidor");
+            }
+
+            // Obtener API Key del header
+            if (!httpContext.Request.Headers.TryGetValue("X-API-Key", out var providedApiKey))
+            {
+                logger.LogWarning("Missing X-API-Key header");
+                return Results.Unauthorized();
+            }
+
+            // Comparar API Keys
+            if (providedApiKey != apiKey)
+            {
+                logger.LogWarning("Invalid API Key provided");
+                return Results.Unauthorized();
+            }
+
             // Validar request
             if (string.IsNullOrWhiteSpace(request.Name) ||
                 string.IsNullOrWhiteSpace(request.Contact) ||

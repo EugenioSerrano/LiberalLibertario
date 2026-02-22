@@ -1,20 +1,21 @@
-@LibertariosTraslasierra_ContactApi_HostAddress = http://localhost:5264
+@LiberalLibertario_ContactApi_HostAddress = https://localhost:7254
 
 ### Health Check
-GET {{LibertariosTraslasierra_ContactApi_HostAddress}}/api/health
+GET {{LiberalLibertario_ContactApi_HostAddress}}/api/health
 Accept: application/json
 
 ###
 
 ### Enviar mensaje de contacto
-POST {{LibertariosTraslasierra_ContactApi_HostAddress}}/api/contact
+POST {{LiberalLibertario_ContactApi_HostAddress}}/api/contact
 Content-Type: application/json
+X-API-Key: LL-d4f8a9c2-7b3e-4a1f-9d2c-5e8f1a3b6c9d
 
 {
   "name": "Test Usuario",
   "contact": "test@example.com",
-  "localidad": "Mina Clavero",
-  "message": "Este es un mensaje de prueba"
+  "localidad": "Villa de las Rosas",
+  "message": "Este es un mensaje de prueba desde el archivo .http"
 }
 
 ###

@@ -6,6 +6,7 @@
         }
     },
     "AllowedHosts": "*",
+    "ApiKey": "your-secure-api-key-here",
     "Email": {
         "SmtpHost": "smtp.gmail.com",
         "SmtpPort": "587",

@@ -19,6 +19,7 @@ const errorMessage = ref('')
 
 // URL de la API - ajustar según el entorno
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000'
+const API_KEY = import.meta.env.VITE_API_KEY
 
 const handleSubmit = async () => {
   if (!form.name || !form.contact || !form.localidad || !form.message) {
@@ -33,7 +34,8 @@ const handleSubmit = async () => {
     const response = await fetch(`${API_URL}/api/contact`, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'X-API-Key': API_KEY
       },
       body: JSON.stringify({
         name: form.name,
@@ -85,7 +87,7 @@ const handleSubmit = async () => {
         <div v-if="isSubmitted" class="success-message">
           <span class="success-icon">✓</span>
           <h3>¡Mensaje enviado!</h3>
-          <p>Gracias por contactarnos. Te responderemos a la brevedad.</p>
+          <p>Gracias por escribir. Te respondo a la brevedad.</p>
           <button class="btn btn-secondary" @click="isSubmitted = false">
             Enviar otro mensaje
           </button>

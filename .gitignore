@@ -37,8 +37,10 @@ project.fragment.lock.json
 artifacts/
 
 # Configuration files with secrets
-appsettings.Local.json
-**/appsettings.Local.json
+appsettings.json
+**/appsettings.json
+!appsettings.json.example
+!**/appsettings.json.example
 
 # StyleCop
 StyleCopReport.xml

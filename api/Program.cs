@@ -2,9 +2,6 @@ using LiberalLibertario.ContactApi.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Cargar appsettings.Local.json si existe (para desarrollo local con credenciales)
-builder.Configuration.AddJsonFile("appsettings.Local.json", optional: true, reloadOnChange: true);
-
 // Configurar CORS para permitir requests desde tu frontend
 builder.Services.AddCors(options =>
 {
