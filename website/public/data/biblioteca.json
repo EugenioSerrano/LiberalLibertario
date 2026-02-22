@@ -21,8 +21,8 @@
         {
           "id": "la-riqueza-de-las-naciones",
           "titulo": "La Riqueza de las Naciones",
-          "audio": "/audios/adam-smith-la-riqueza-de-las-naciones.mp3",
-          "pdf": "/pdfs/Adam Smith - La Riqueza de las Naciones.pdf"
+          "audio": "https://api.liberal-libertario.com/assets/audio/adam-smith-la-riqueza-de-las-naciones.mp3",
+          "pdf": "https://api.liberal-libertario.com/assets/pdf/Adam Smith - La Riqueza de las Naciones.pdf"
         }
       ]
     },
@@ -36,8 +36,8 @@
         {
           "id": "la-rebelion-de-atlas",
           "titulo": "La Rebelión de Atlas",
-          "audio": "/audios/ayn-rand-la-rebelion-de-atlas.mp3",
-          "pdf": "/pdfs/Ayn Rand - La Rebelión de Atlas.pdf"
+          "audio": "https://api.liberal-libertario.com/assets/audio/ayn-rand-la-rebelion-de-atlas.mp3",
+          "pdf": "https://api.liberal-libertario.com/assets/pdf/Ayn Rand - La Rebelión de Atlas.pdf"
         }
       ]
     },
@@ -51,8 +51,8 @@
         {
           "id": "principios-de-economia-politica",
           "titulo": "Principios de Economía Política",
-          "audio": "/audios/carl-menger-principios-de-economia-politica.mp3",
-          "pdf": "/pdfs/Carl Menger - Principios de Economia Politica.pdf"
+          "audio": "https://api.liberal-libertario.com/assets/audio/carl-menger-principios-de-economia-politica.mp3",
+          "pdf": "https://api.liberal-libertario.com/assets/pdf/Carl Menger - Principios de Economia Politica.pdf"
         }
       ]
     },
@@ -66,14 +66,14 @@
         {
           "id": "camino-de-servidumbre",
           "titulo": "Camino de Servidumbre",
-          "audio": "/audios/friedrich-hayek-camino-de-servidumbre.mp3",
-          "pdf": "/pdfs/Friedrich Hayek - Camino de Servidumbre.pdf"
+          "audio": "https://api.liberal-libertario.com/assets/audio/friedrich-hayek-camino-de-servidumbre.mp3",
+          "pdf": "https://api.liberal-libertario.com/assets/pdf/Friedrich Hayek - Camino de Servidumbre.pdf"
         },
         {
           "id": "los-fundamentos-de-la-libertad",
           "titulo": "Los Fundamentos de la Libertad",
-          "audio": "/audios/friedrich-hayek-los-fundamentos-de-la-libertad.mp3",
-          "pdf": "/pdfs/Friedrich Hayek - Los Fundamentos de la Libertad.pdf"
+          "audio": "https://api.liberal-libertario.com/assets/audio/friedrich-hayek-los-fundamentos-de-la-libertad.mp3",
+          "pdf": "https://api.liberal-libertario.com/assets/pdf/Friedrich Hayek - Los Fundamentos de la Libertad.pdf"
         }
       ]
     },
@@ -87,8 +87,8 @@
         {
           "id": "lo-que-debemos-saber-sobre-inflacion",
           "titulo": "Lo que debemos saber sobre inflación",
-          "audio": "/audios/henry-hazlitt-lo-que-debemos-saber-sobre-inflacion.mp3",
-          "pdf": "/pdfs/Henry Hazlitt - Lo que debemos saber sobre inflacion.pdf"
+          "audio": "https://api.liberal-libertario.com/assets/audio/henry-hazlitt-lo-que-debemos-saber-sobre-inflacion.mp3",
+          "pdf": "https://api.liberal-libertario.com/assets/pdf/Henry Hazlitt - Lo que debemos saber sobre inflacion.pdf"
         }
       ]
     },
@@ -102,8 +102,8 @@
         {
           "id": "las-bases",
           "titulo": "Las Bases",
-          "audio": "/audios/juan-bautista-alberdi-bases.mp3",
-          "pdf": "/pdfs/Juan Bautista Alberdi - Bases.pdf"
+          "audio": "https://api.liberal-libertario.com/assets/audio/juan-bautista-alberdi-bases.mp3",
+          "pdf": "https://api.liberal-libertario.com/assets/pdf/Juan Bautista Alberdi - Bases.pdf"
         }
       ]
     },
@@ -117,14 +117,14 @@
         {
           "id": "la-mentalidad-anticapitalista",
           "titulo": "La Mentalidad Anticapitalista",
-          "audio": "/audios/ludwig-von-mises-la-mentalidad-anticapitalista.mp3",
-          "pdf": "/pdfs/Ludwig Von Mises - La Mentalidad Anticapitalista.pdf"
+          "audio": "https://api.liberal-libertario.com/assets/audio/ludwig-von-mises-la-mentalidad-anticapitalista.mp3",
+          "pdf": "https://api.liberal-libertario.com/assets/pdf/Ludwig Von Mises - La Mentalidad Anticapitalista.pdf"
         },
         {
           "id": "critica-del-intervencionismo",
           "titulo": "Crítica del Intervencionismo. El Mito de la Tercera Vía",
-          "audio": "/audios/ludwig-von-mises-critica-del-intervencionismo-el-mito-de-la-tercera-via.mp3",
-          "pdf": "/pdfs/Ludwig Von Mises - Critica del Intervencionismo. El Mito de la Tercera Via.pdf"
+          "audio": "https://api.liberal-libertario.com/assets/audio/ludwig-von-mises-critica-del-intervencionismo-el-mito-de-la-tercera-via.mp3",
+          "pdf": "https://api.liberal-libertario.com/assets/pdf/Ludwig Von Mises - Critica del Intervencionismo. El Mito de la Tercera Via.pdf"
         }
       ]
     },
@@ -138,14 +138,14 @@
         {
           "id": "capitalismo-y-libertad",
           "titulo": "Capitalismo y Libertad",
-          "audio": "/audios/milton-friedman-capitalismo-y-libertad.mp3",
-          "pdf": "/pdfs/Milton Friedman - Capitalismo y Libertad.pdf"
+          "audio": "https://api.liberal-libertario.com/assets/audio/milton-friedman-capitalismo-y-libertad.mp3",
+          "pdf": "https://api.liberal-libertario.com/assets/pdf/Milton Friedman - Capitalismo y Libertad.pdf"
         },
         {
           "id": "libertad-de-elegir",
           "titulo": "Libertad de Elegir",
-          "audio": "/audios/milton-friedman-libertad-de-elegir.mp3",
-          "pdf": "/pdfs/Milton Friedman - Libertad de Elegir.pdf"
+          "audio": "https://api.liberal-libertario.com/assets/audio/milton-friedman-libertad-de-elegir.mp3",
+          "pdf": "https://api.liberal-libertario.com/assets/pdf/Milton Friedman - Libertad de Elegir.pdf"
         }
       ]
     },
@@ -159,8 +159,8 @@
         {
           "id": "el-hombre-la-economia-y-el-estado",
           "titulo": "El Hombre, la Economía y el Estado",
-          "audio": "/audios/murray-rothbard-el-hombre-la-economia-y-el-estado.mp3",
-          "pdf": "/pdfs/Murray Rothbard - El Hombre, la Economia y el Estado.pdf"
+          "audio": "https://api.liberal-libertario.com/assets/audio/murray-rothbard-el-hombre-la-economia-y-el-estado.mp3",
+          "pdf": "https://api.liberal-libertario.com/assets/pdf/Murray Rothbard - El Hombre, la Economia y el Estado.pdf"
         }
       ]
     }
