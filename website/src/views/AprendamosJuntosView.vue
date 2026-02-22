@@ -10,12 +10,18 @@ interface Libro {
   pdf: string
 }
 
+interface AudioResumen {
+  titulo: string
+  audio: string
+}
+
 interface Autor {
   id: string
   nombre: string
   iniciales: string
   imagen: string
   descripcion: string
+  audioResumen?: AudioResumen
   libros: Libro[]
 }
 
@@ -288,6 +294,85 @@ const formatTime = (seconds: number) => {
             <div class="autor-content" v-show="isAutorExpanded(autor.id)">
               <p class="autor-descripcion">{{ autor.descripcion }}</p>
               
+              <!-- Audio Resumen Card -->
+              <div v-if="autor.audioResumen" class="resumen-card">
+                <div class="resumen-header">
+                  <div class="resumen-title-section">
+                    <span class="resumen-icon">🎧</span>
+                    <h4 class="resumen-titulo">{{ autor.audioResumen.titulo }}</h4>
+                  </div>
+                </div>
+
+                <!-- Audio Player for Resumen -->
+                <div class="libro-player" v-if="currentlyPlaying === `resumen-${autor.id}`">
+                  <div class="player-controls">
+                    <button 
+                      class="player-btn play-btn"
+                      @click="playAudio(`resumen-${autor.id}`, autor.audioResumen.audio)"
+                      :title="isPlaying ? 'Pausar' : 'Reproducir'"
+                    >
+                      <svg v-if="isPlaying" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="6" y="4" width="4" height="16"></rect>
+                        <rect x="14" y="4" width="4" height="16"></rect>
+                      </svg>
+                      <svg v-else width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                      </svg>
+                    </button>
+                    <button 
+                      class="player-btn stop-btn"
+                      @click="stopAudio"
+                      title="Detener"
+                    >
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="4" y="4" width="16" height="16"></rect>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="player-progress">
+                    <input 
+                      type="range" 
+                      class="progress-bar"
+                      :value="audioProgress"
+                      :max="audioDuration"
+                      @input="seekAudio($event, `resumen-${autor.id}`)"
+                    />
+                    <div class="player-time">
+                      <span>{{ formatTime(audioProgress) }}</span>
+                      <span>{{ formatTime(audioDuration) }}</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="resumen-actions">
+                  <button 
+                    class="action-btn listen-btn"
+                    @click="playAudio(`resumen-${autor.id}`, autor.audioResumen.audio)"
+                    :class="{ active: currentlyPlaying === `resumen-${autor.id}` && isPlaying }"
+                  >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 18V5l12-2v13"></path>
+                      <circle cx="6" cy="18" r="3"></circle>
+                      <circle cx="18" cy="16" r="3"></circle>
+                    </svg>
+                    <span>{{ currentlyPlaying === `resumen-${autor.id}` && isPlaying ? 'Reproduciendo...' : 'Escuchar resumen' }}</span>
+                  </button>
+
+                  <a 
+                    :href="autor.audioResumen.audio" 
+                    download 
+                    class="action-btn download-btn"
+                  >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="7 10 12 15 17 10"></polyline>
+                      <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Descargar audio</span>
+                  </a>
+                </div>
+              </div>
+              
               <div class="libros-list">
                 <div 
                   v-for="libro in autor.libros" 
@@ -551,6 +636,47 @@ const formatTime = (seconds: number) => {
   margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--color-border);
+}
+
+/* Resumen Card - destacado antes de los libros */
+.resumen-card {
+  background: linear-gradient(135deg, rgba(242, 180, 0, 0.08) 0%, rgba(242, 180, 0, 0.03) 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 2px solid var(--color-primary);
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 16px rgba(242, 180, 0, 0.12);
+}
+
+.resumen-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.resumen-title-section {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.resumen-icon {
+  font-size: 1.75rem;
+}
+
+.resumen-titulo {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.resumen-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 .libros-list {
