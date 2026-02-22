@@ -5,9 +5,7 @@ const currentYear = new Date().getFullYear()
 
 const quickLinks = [
   { label: 'Principios', path: '/principios' },
-  { label: 'Qué hacemos', path: '/que-hacemos' },
-  { label: 'Aprendamos juntos', path: '/aprendamos-juntos' },
-  { label: 'Sumate', path: '/sumate' },
+  { label: 'Biblioteca', path: '/aprendamos-juntos' },
   { label: 'Contacto', path: '/contacto' }
 ]
 </script>
@@ -19,13 +17,12 @@ const quickLinks = [
         <div class="footer-brand">
           <RouterLink to="/" class="footer-logo-link">
             <img 
-              src="@/assets/LogoCondorBlanco.png" 
+              src="@/assets/LogoLiberalLibertarioBlanco.png" 
               alt="Liberal Libertario" 
               class="footer-logo"
             />
           </RouterLink>
-          <p class="footer-tagline">Una idea de libertad que echó raíces en Traslasierra</p>
-          <p class="footer-location">Traslasierra · Córdoba · Argentina</p>
+          <p class="footer-tagline">Defendiendo las ideas de la libertad</p>
         </div>
 
         <div class="footer-links">
@@ -38,7 +35,7 @@ const quickLinks = [
         </div>
 
         <div class="footer-values">
-          <h4 class="footer-heading">Nuestros valores</h4>
+          <h4 class="footer-heading">Valores</h4>
           <ul class="values-list">
             <li>Libertad individual</li>
             <li>Estado limitado</li>
@@ -48,9 +45,9 @@ const quickLinks = [
         </div>
 
         <div class="footer-cta">
-          <h4 class="footer-heading">¿Compartís nuestras ideas?</h4>
-          <p>Sumate a la defensa de la libertad en Traslasierra.</p>
-          <RouterLink to="/sumate" class="btn btn-primary">Sumate</RouterLink>
+          <h4 class="footer-heading">¿Compartís mis ideas?</h4>
+          <p>Sumate a la defensa de la libertad.</p>
+          <RouterLink to="/contacto" class="btn btn-primary">Contacto</RouterLink>
         </div>
       </div>
 
@@ -59,7 +56,7 @@ const quickLinks = [
           © {{ currentYear }} Liberal Libertario. Todos los derechos reservados.
         </p>
         <p class="footer-quote">
-          "Nuestra lealtad es a los principios, no a personas."
+          "La lealtad debe ser a los principios, no a personas."
         </p>
       </div>
     </div>

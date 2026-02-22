@@ -8,9 +8,9 @@ const principles = [
     key: 'libertad_individual',
     title: 'Libertad individual',
     bullets: [
-      'Defendemos la libertad de pensamiento, expresión, trabajo y asociación.',
+      'Defiendo la libertad de pensamiento, expresión, trabajo y asociación.',
       'El individuo es anterior al Estado y no un medio para fines políticos.',
-      'Rechazamos toda forma de autoritarismo, venga de donde venga.'
+      'Rechazo toda forma de autoritarismo, venga de donde venga.'
     ]
   },
   {
@@ -18,7 +18,7 @@ const principles = [
     title: 'Estado limitado, eficiente y transparente',
     bullets: [
       'El Estado debe cumplir funciones esenciales, no invadir la vida privada.',
-      'Promovemos la reducción del gasto innecesario y el uso responsable de recursos públicos.',
+      'Promuevo la reducción del gasto innecesario y el uso responsable de recursos públicos.',
       'La transparencia no es un slogan: es una obligación ética.'
     ]
   },
@@ -26,9 +26,9 @@ const principles = [
     key: 'igualdad_ley',
     title: 'Igualdad ante la ley',
     bullets: [
-      'Rechazamos privilegios políticos, sindicales, empresariales o corporativos.',
+      'Rechazo privilegios políticos, sindicales, empresariales o corporativos.',
       'La ley debe aplicarse igual para todos, sin excepciones.',
-      'No creemos en ciudadanos de primera y de segunda.'
+      'No creo en ciudadanos de primera y de segunda.'
     ]
   },
   {
@@ -46,7 +46,43 @@ const principles = [
     bullets: [
       'Es un pilar de la libertad y del desarrollo.',
       'Sin reglas claras y respeto por lo ajeno, no hay inversión ni crecimiento.',
-      'Defendemos la seguridad jurídica como condición básica.'
+      'Defiendo la seguridad jurídica como condición básica.'
+    ]
+  },
+  {
+    key: 'libre_mercado',
+    title: 'Libre mercado y libertad económica',
+    bullets: [
+      'El intercambio voluntario es motor de progreso y cooperación.',
+      'Rechazo el proteccionismo, los monopolios estatales y las trabas burocráticas.',
+      'La competencia beneficia al consumidor y estimula la innovación.'
+    ]
+  },
+  {
+    key: 'descentralizacion',
+    title: 'Descentralización del poder',
+    bullets: [
+      'Cuanto más cerca esté el poder de la gente, mejor.',
+      'Defiendo el federalismo real y la autonomía municipal.',
+      'Concentrar el poder es peligroso, descentralizarlo es saludable.'
+    ]
+  },
+  {
+    key: 'educacion_critica',
+    title: 'Educación y pensamiento crítico',
+    bullets: [
+      'Una ciudadanía informada es la mejor defensa de la libertad.',
+      'Promuevo el acceso al conocimiento, el debate de ideas y la lectura.',
+      'Rechazo el adoctrinamiento y defiendo la pluralidad de pensamiento.'
+    ]
+  },
+  {
+    key: 'no_agresion',
+    title: 'Principio de no agresión',
+    bullets: [
+      'Nadie tiene derecho a iniciar violencia contra otro.',
+      'La defensa es legítima, la agresión no.',
+      'Este principio se aplica tanto a individuos como al Estado.'
     ]
   }
 ]
@@ -54,15 +90,15 @@ const principles = [
 const formsValues = [
   {
     title: 'Ética y coherencia',
-    description: 'Rechazamos prácticas clientelares, oportunistas o deshonestas.'
+    description: 'Rechazo prácticas clientelares, oportunistas o deshonestas.'
   },
   {
     title: 'Respeto y diálogo',
-    description: 'Debate firme pero respetuoso. No insultamos ni degradamos al que piensa distinto.'
+    description: 'Debate firme pero respetuoso. Sin insultos ni degradación al que piensa distinto.'
   },
   {
-    title: 'Independencia personal',
-    description: 'Ningún integrante habla en nombre del grupo sin consenso. Lealtad a principios.'
+    title: 'Independencia intelectual',
+    description: 'Lealtad a los principios, no a personas o partidos.'
   }
 ]
 </script>
@@ -70,20 +106,20 @@ const formsValues = [
 <template>
   <div class="principios">
     <PageHeader
-      headline="Qué defendemos"
+      headline="Qué defiendo"
       subheadline="Respeto irrestricto al proyecto de vida del prójimo, responsabilidad individual y Estado limitado."
     />
 
     <PrinciplesList
-      intro="Nuestro compromiso es con los principios. Las personas son vehículos de esas ideas, pero la lealtad es a los valores."
+      intro="Mi compromiso es con los principios. Las personas son vehículos de esas ideas, pero la lealtad es a los valores."
       :items="principles"
     />
 
     <section class="section callout-section">
       <div class="container">
         <div class="callout-box">
-          <h2 class="callout-title">Valores y formas</h2>
-          <p class="callout-subtitle">Esto es clave</p>
+          <h2 class="callout-title">Valores en la práctica</h2>
+          <p class="callout-subtitle">Cómo lo llevo a cabo</p>
         </div>
       </div>
     </section>

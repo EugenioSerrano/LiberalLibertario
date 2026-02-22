@@ -21,46 +21,16 @@ const router = createRouter({
       meta: { title: 'Liberal Libertario' }
     },
     {
-      path: '/quienes-somos',
-      name: 'quienes-somos',
-      component: () => import('../views/QuienesSomosView.vue'),
-      meta: { title: 'Quiénes Somos - Liberal Libertario' }
-    },
-    {
-      path: '/origen',
-      name: 'origen',
-      component: () => import('../views/OrigenView.vue'),
-      meta: { title: 'De Dónde Venimos - Liberal Libertario' }
-    },
-    {
       path: '/principios',
       name: 'principios',
       component: () => import('../views/PrincipiosView.vue'),
       meta: { title: 'Principios - Liberal Libertario' }
     },
     {
-      path: '/que-hacemos',
-      name: 'que-hacemos',
-      component: () => import('../views/QueHacemosView.vue'),
-      meta: { title: 'Qué Hacemos - Liberal Libertario' }
-    },
-    {
-      path: '/como-trabajamos',
-      name: 'como-trabajamos',
-      component: () => import('../views/ComoTrabajamosView.vue'),
-      meta: { title: 'Cómo Trabajamos - Liberal Libertario' }
-    },
-    {
-      path: '/sumate',
-      name: 'sumate',
-      component: () => import('../views/SumateView.vue'),
-      meta: { title: 'Sumate - Liberal Libertario' }
-    },
-    {
       path: '/aprendamos-juntos',
       name: 'aprendamos-juntos',
       component: () => import('../views/AprendamosJuntosView.vue'),
-      meta: { title: 'Aprendamos Juntos - Liberal Libertario' }
+      meta: { title: 'Biblioteca - Liberal Libertario' }
     },
     {
       path: '/contacto',

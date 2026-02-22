@@ -6,13 +6,8 @@ const isMenuOpen = ref(false)
 
 const navItems = [
   { label: 'Home', path: '/' },
-  { label: 'Quiénes somos', path: '/quienes-somos' },
-  { label: 'Origen', path: '/origen' },
   { label: 'Principios', path: '/principios' },
-  { label: 'Qué hacemos', path: '/que-hacemos' },
-  { label: 'Cómo trabajamos', path: '/como-trabajamos' },
-  { label: 'Aprendamos juntos', path: '/aprendamos-juntos' },
-  { label: 'Sumate', path: '/sumate' },
+  { label: 'Biblioteca', path: '/aprendamos-juntos' },
   { label: 'Contacto', path: '/contacto' }
 ]
 
@@ -30,7 +25,7 @@ const closeMenu = () => {
     <div class="container header-container">
       <RouterLink to="/" class="logo-link" @click="closeMenu">
         <img 
-          src="@/assets/LogoCondorOriginal.png" 
+          src="@/assets/LogoLiberalLibertario.png" 
           alt="Liberal Libertario" 
           class="logo"
         />

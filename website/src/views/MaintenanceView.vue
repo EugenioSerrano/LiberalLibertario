@@ -9,7 +9,7 @@
         <!-- Logo -->
         <div class="logo-section">
           <img 
-            src="@/assets/LogoCondorOriginal.png" 
+            src="@/assets/LogoLiberalLibertario.png" 
             alt="Liberal Libertario" 
             class="logo"
           />
@@ -27,24 +27,24 @@
 
         <!-- Mensaje principal -->
         <div class="message-section">
-          <h2 class="headline">Estamos trabajando en algo nuevo</h2>
+          <h2 class="headline">Estoy trabajando en algo nuevo</h2>
           
           <div class="comunicado">
             <p class="statement">
               Liberal Libertario está dando sus primeros pasos.<br>
-              Estamos construyendo un espacio coherente y ético para las ideas de libertad.
+              Estoy construyendo un espacio coherente y ético para las ideas de libertad.
             </p>
             
             <p class="statement">
-              Próximamente tendremos novedades sobre quiénes somos, qué hacemos y cómo sumarse.
+              Próximamente habrá novedades sobre principios, contenido y recursos.
             </p>
             
             <p class="statement final">
-              Mientras tanto, estamos trabajando en los detalles para ofrecerte la mejor experiencia.
+              Mientras tanto, estoy trabajando en los detalles para ofrecer la mejor experiencia.
             </p>
             
             <p class="closure">
-              Volvemos pronto.
+              Vuelvo pronto.
             </p>
           </div>
         </div>
