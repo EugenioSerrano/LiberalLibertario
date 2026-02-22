@@ -17,7 +17,9 @@ defineProps<{
       <h2 v-if="title" class="features-title">{{ title }}</h2>
       <div class="features-grid">
         <article v-for="(item, index) in items" :key="index" class="feature-card">
-          <span v-if="item.icon" class="feature-icon">{{ item.icon }}</span>
+          <span v-if="item.icon" class="feature-icon">
+            <font-awesome-icon :icon="item.icon" />
+          </span>
           <h3 class="feature-title">{{ item.title }}</h3>
           <p class="feature-description">{{ item.description }}</p>
         </article>

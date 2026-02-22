@@ -25,17 +25,17 @@ import CalloutSection from '@/components/CalloutSection.vue'
         { 
           title: 'Libertad Individual', 
           description: 'Defensa irrestricta de tu derecho a pensar, expresarte y vivir según tus propias decisiones.',
-          icon: '⛓️‍💥'
+          icon: 'person-running'
         },
         { 
           title: 'Responsabilidad Personal', 
           description: 'El individuo como dueño de sus decisiones y consecuencias. Sin paternalismos ni excusas.',
-          icon: '⚖️'
+          icon: 'balance-scale'
         },
         { 
           title: 'Estado Limitado', 
           description: 'Un Estado eficiente, transparente y acotado a sus funciones esenciales.',
-          icon: '🏛️'
+          icon: 'landmark'
         }
       ]"
     />

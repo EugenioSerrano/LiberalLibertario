@@ -7,6 +7,7 @@ const principles = [
   {
     key: 'libertad_individual',
     title: 'Libertad individual',
+    icon: 'person-running',
     bullets: [
       'Defiendo la libertad de pensamiento, expresión, trabajo y asociación.',
       'El individuo es anterior al Estado y no un medio para fines políticos.',
@@ -16,6 +17,7 @@ const principles = [
   {
     key: 'estado_limitado',
     title: 'Estado limitado, eficiente y transparente',
+    icon: 'shield-halved',
     bullets: [
       'El Estado debe cumplir funciones esenciales, no invadir la vida privada.',
       'Promuevo la reducción del gasto innecesario y el uso responsable de recursos públicos.',
@@ -25,6 +27,7 @@ const principles = [
   {
     key: 'igualdad_ley',
     title: 'Igualdad ante la ley',
+    icon: 'gavel',
     bullets: [
       'Rechazo privilegios políticos, sindicales, empresariales o corporativos.',
       'La ley debe aplicarse igual para todos, sin excepciones.',
@@ -34,6 +37,7 @@ const principles = [
   {
     key: 'trabajo_responsabilidad',
     title: 'Cultura del trabajo y la responsabilidad',
+    icon: 'briefcase',
     bullets: [
       'El progreso surge del trabajo, el mérito y el esfuerzo.',
       'El asistencialismo permanente destruye dignidad y futuro.',
@@ -43,6 +47,7 @@ const principles = [
   {
     key: 'propiedad_privada',
     title: 'Propiedad privada',
+    icon: 'key',
     bullets: [
       'Es un pilar de la libertad y del desarrollo.',
       'Sin reglas claras y respeto por lo ajeno, no hay inversión ni crecimiento.',
@@ -52,6 +57,7 @@ const principles = [
   {
     key: 'libre_mercado',
     title: 'Libre mercado y libertad económica',
+    icon: 'store-slash',
     bullets: [
       'El intercambio voluntario es motor de progreso y cooperación.',
       'Rechazo el proteccionismo, los monopolios estatales y las trabas burocráticas.',
@@ -61,6 +67,7 @@ const principles = [
   {
     key: 'descentralizacion',
     title: 'Descentralización del poder',
+    icon: 'sitemap',
     bullets: [
       'Cuanto más cerca esté el poder de la gente, mejor.',
       'Defiendo el federalismo real y la autonomía municipal.',
@@ -70,6 +77,7 @@ const principles = [
   {
     key: 'educacion_critica',
     title: 'Educación y pensamiento crítico',
+    icon: 'graduation-cap',
     bullets: [
       'Una ciudadanía informada es la mejor defensa de la libertad.',
       'Promuevo el acceso al conocimiento, el debate de ideas y la lectura.',
@@ -79,6 +87,7 @@ const principles = [
   {
     key: 'no_agresion',
     title: 'Principio de no agresión',
+    icon: 'hand-peace',
     bullets: [
       'Nadie tiene derecho a iniciar violencia contra otro.',
       'La defensa es legítima, la agresión no.',

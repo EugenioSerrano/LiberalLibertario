@@ -2,6 +2,7 @@
 interface Principle {
   key: string
   title: string
+  icon?: string
   bullets: string[]
 }
 
@@ -18,7 +19,9 @@ defineProps<{
       <div class="principles-list">
         <article v-for="item in items" :key="item.key" class="principle-card">
           <div class="principle-header">
-            <div class="principle-icon">⚖️</div>
+            <div class="principle-icon">
+              <font-awesome-icon v-if="item.icon" :icon="item.icon" />
+            </div>
             <h3 class="principle-title">{{ item.title }}</h3>
           </div>
           <ul class="principle-bullets">
