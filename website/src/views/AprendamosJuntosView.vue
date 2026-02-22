@@ -61,15 +61,28 @@ onMounted(async () => {
       // If libro is specified, prepare the player without autoplay
       if (libroId) {
         const autor = biblioteca.value.autores.find(a => a.id === autorId)
-        const libro = autor?.libros.find(l => l.id === libroId)
-        if (libro) {
+        
+        // Check if it's a resumen
+        if (libroId === 'resumen' && autor?.audioResumen) {
           setTimeout(() => {
-            // Prepare player without playing
-            prepareAudio(libro.id, libro.audio)
-            // Scroll to the book
-            const element = document.getElementById(`libro-${libroId}`)
+            // Prepare player for resumen without playing
+            prepareAudio(`resumen-${autorId}`, autor.audioResumen!.audio)
+            // Scroll to the resumen card
+            const element = document.getElementById(`resumen-${autorId}`)
             element?.scrollIntoView({ behavior: 'smooth', block: 'center' })
           }, 500)
+        } else {
+          // Regular libro
+          const libro = autor?.libros.find(l => l.id === libroId)
+          if (libro) {
+            setTimeout(() => {
+              // Prepare player without playing
+              prepareAudio(libro.id, libro.audio)
+              // Scroll to the book
+              const element = document.getElementById(`libro-${libroId}`)
+              element?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+            }, 500)
+          }
         }
       }
     }
@@ -102,9 +115,12 @@ const isAutorExpanded = (autorId: string) => {
 const shareLink = async (autorId: string, libroId: string, libroTitulo: string) => {
   const url = `${window.location.origin}/aprendamos-juntos?autor=${autorId}&libro=${libroId}`
   
+  // Use a unique identifier for copiedLink
+  const linkId = libroId === 'resumen' ? `resumen-${autorId}` : libroId
+  
   try {
     await navigator.clipboard.writeText(url)
-    copiedLink.value = libroId
+    copiedLink.value = linkId
     setTimeout(() => {
       copiedLink.value = null
     }, 2000)
@@ -116,7 +132,7 @@ const shareLink = async (autorId: string, libroId: string, libroTitulo: string) 
     textArea.select()
     document.execCommand('copy')
     document.body.removeChild(textArea)
-    copiedLink.value = libroId
+    copiedLink.value = linkId
     setTimeout(() => {
       copiedLink.value = null
     }, 2000)
@@ -295,12 +311,29 @@ const formatTime = (seconds: number) => {
               <p class="autor-descripcion">{{ autor.descripcion }}</p>
               
               <!-- Audio Resumen Card -->
-              <div v-if="autor.audioResumen" class="resumen-card">
+              <div v-if="autor.audioResumen" class="resumen-card" :id="`resumen-${autor.id}`">
                 <div class="resumen-header">
                   <div class="resumen-title-section">
                     <span class="resumen-icon">🎧</span>
                     <h4 class="resumen-titulo">{{ autor.audioResumen.titulo }}</h4>
                   </div>
+                  <button 
+                    class="share-btn"
+                    @click="shareLink(autor.id, 'resumen', autor.audioResumen.titulo)"
+                    :title="copiedLink === `resumen-${autor.id}` ? '¡Link copiado!' : 'Compartir link'"
+                  >
+                    <svg v-if="copiedLink === `resumen-${autor.id}`" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <svg v-else width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="18" cy="5" r="3"></circle>
+                      <circle cx="6" cy="12" r="3"></circle>
+                      <circle cx="18" cy="19" r="3"></circle>
+                      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                      <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                    </svg>
+                    <span class="share-text">{{ copiedLink === `resumen-${autor.id}` ? '¡Copiado!' : 'Compartir' }}</span>
+                  </button>
                 </div>
 
                 <!-- Audio Player for Resumen -->
