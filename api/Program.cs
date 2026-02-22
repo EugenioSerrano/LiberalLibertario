@@ -1,4 +1,5 @@
 using LiberalLibertario.ContactApi.Endpoints;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,6 +32,21 @@ if (app.Environment.IsDevelopment())
 
 // IMPORTANTE: UseCors debe estar antes de los endpoints
 app.UseCors("AllowFrontend");
+
+// Configurar archivos estáticos desde la carpeta assets
+var assetsPath = Path.Combine(app.Environment.ContentRootPath, "assets");
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(assetsPath),
+    RequestPath = "/assets",
+    OnPrepareResponse = ctx =>
+    {
+        // Agregar headers CORS manualmente para archivos estáticos
+        ctx.Context.Response.Headers.Append("Access-Control-Allow-Origin", "*");
+        // Cache por 1 año para archivos estáticos
+        ctx.Context.Response.Headers.Append("Cache-Control", "public,max-age=31536000");
+    }
+});
 
 app.UseHttpsRedirection();
 

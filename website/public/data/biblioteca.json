@@ -15,8 +15,8 @@
         {
           "id": "la-mano-invisible",
           "titulo": "La Mano Invisible",
-          "audio": "/audios/adam-smith-la-mano-invisible.mp3",
-          "pdf": "/pdfs/Adam Smith - La Mano Invisible.pdf"
+          "audio": "https://api.liberal-libertario.com/assets/audio/adam-smith-la-mano-invisible.mp3",
+          "pdf": "https://api.liberal-libertario.com/assets/pdf/Adam Smith - La Mano Invisible.pdf"
         },
         {
           "id": "la-riqueza-de-las-naciones",
