@@ -32,7 +32,7 @@ defineProps<{
   min-height: 85vh;
   display: flex;
   align-items: center;
-  background-image: url('@/assets/images/EJS_2247.jpg');
+  background-image: url('@/assets/images/Libertad.png');
   background-size: cover;
   background-position: center;
   overflow: hidden;

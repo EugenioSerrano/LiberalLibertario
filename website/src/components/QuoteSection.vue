@@ -24,7 +24,7 @@ defineProps<{
 
 <style scoped>
 .quote-section {
-  background-image: url('@/assets/images/EJS_2247.jpg');
+  background-image: url('@/assets/images/Libertad.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
