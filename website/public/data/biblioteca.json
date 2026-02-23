@@ -27,6 +27,12 @@
           "titulo": "La Riqueza de las Naciones",
           "audio": "https://api.liberal-libertario.com/assets/audio/adam-smith-la-riqueza-de-las-naciones.mp3",
           "pdf": "https://api.liberal-libertario.com/assets/pdf/Adam Smith - La Riqueza de las Naciones.pdf"
+        },
+        {
+          "id": "la-teoria-de-los-sentimientos-morales",
+          "titulo": "La Teoría de los Sentimientos Morales",
+          "audio": "https://api.liberal-libertario.com/assets/audio/adam-smith-la-teoria-de-los-sentimientos-morales.mp3",
+          "pdf": "https://api.liberal-libertario.com/assets/pdf/Adam Smith - La Teoria de los Sentimientos Morales.pdf"
         }
       ]
     },
